@@ -1,0 +1,24 @@
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/EnderBey1/enderbeymaterialscript/main/panel"))()
+
+local UI = Material.Load({
+     Title = "EnderBey ROBLOX Scriptler",
+     Style = 24,
+     SizeX = 500,
+     SizeY = 200,
+     Theme = "Dark"
+})
+
+local Page = UI.New({
+    Title = "Bedwars",
+
+
+})
+
+Page.Button({
+    Text = "Bedwars",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EnderBey1/robloxhack/main/bedwars", true))()
+
+
+    end
+})
